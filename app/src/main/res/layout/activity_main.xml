@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:layout_margin="@dimen/layoutPadding"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:maxLines="1"
+        android:inputType="text"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="@dimen/subviewPadding"
+        android:background="@drawable/costum_edittext"
+        android:drawableStart="@drawable/ic_person"
+        android:drawableLeft="@drawable/ic_person"
+        android:drawablePadding="12dp"/>
+
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="@dimen/subviewPadding"
+        android:background="@drawable/costum_edittext"
+        android:drawableStart="@drawable/ic_email"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="12dp" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:maxLines="1"
+        android:inputType="phone"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="@dimen/subviewPadding"
+        android:background="@drawable/costum_edittext"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="12dp" />
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        android:maxLines="3"
+        android:inputType="textMultiLine"
+        android:importantForAutofill="no"
+        android:layout_marginVertical="@dimen/subviewPadding"
+        android:paddingHorizontal="@dimen/subviewPadding"
+        android:background="@drawable/costum_edittext"
+        android:drawableStart="@drawable/ic_home"
+        android:drawableLeft="@drawable/ic_home"
+        android:drawablePadding="12dp"
+        android:imeOptions="actionDone"/>
+
+    <Button
+        android:id="@+id/btn_add_record"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_record"
+        android:layout_marginVertical="@dimen/viewPadding"
+        android:layout_gravity="center_horizontal"
+        style="@style/AppTextAppearance.Button"/>
+
+    <TextView
+        android:id="@+id/txt_records"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/all_records"
+        android:layout_marginTop="@dimen/subviewPadding"
+        style="?attr/textAppearanceBody1"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/records_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/subviewPadding"
+            style="?attr/textAppearanceBody2"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/txt_noRecords"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_records_available"
+            android:layout_margin="3dp"
+            style="?attr/textAppearanceBody2"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

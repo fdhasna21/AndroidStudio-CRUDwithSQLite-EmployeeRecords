@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/layoutPadding"
+    android:paddingTop="@dimen/layoutPadding"
+    android:paddingBottom="@dimen/viewPadding">
+
+    <TextView
+        android:text="@string/edit_record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TitleTextStyle"
+        android:layout_marginBottom="6dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <EditText
+            android:id="@+id/edit_dialog_inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:inputType="text"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            style="@style/BodyTextStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/email"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <EditText
+            android:id="@+id/edit_dialog_inputEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            style="@style/BodyTextStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/phone_number"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <EditText
+            android:id="@+id/edit_dialog_inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            style="@style/BodyTextStyle"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/address"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <EditText
+            android:id="@+id/edit_dialog_inputAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor"
+            style="@style/BodyTextStyle"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/edit_dialog_btnConfirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirm"
+            style="@style/PositiveButtonStyle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:foregroundGravity="center"/>
+
+        <TextView
+            android:id="@+id/edit_dialog_btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancels"
+            style="@style/NegativeButtonStyle"
+            android:layout_alignBaseline="@id/edit_dialog_btnConfirm"
+            android:layout_toLeftOf="@id/edit_dialog_btnConfirm"
+            android:layout_toStartOf="@id/edit_dialog_btnConfirm"
+            android:foregroundGravity="center"/>
+
+    </RelativeLayout>
+</LinearLayout>

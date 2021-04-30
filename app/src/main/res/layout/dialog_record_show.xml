@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/layoutPadding">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <TextView
+            android:id="@+id/show_dialog_outputName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/data"
+            android:layout_marginHorizontal="6dp"
+            android:maxLines="1"
+            android:scrollHorizontally="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/email" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <TextView
+            android:id="@+id/show_dialog_outputEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/data"
+            android:layout_marginHorizontal="6dp"
+            android:maxLines="1"
+            android:scrollHorizontally="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/phone_number" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <TextView
+            android:id="@+id/show_dialog_outputPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/data"
+            android:layout_marginHorizontal="6dp"
+            android:singleLine="true"
+            android:scrollHorizontally="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/address" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/colon"
+            android:layout_marginHorizontal="6dp"/>
+
+        <TextView
+            android:id="@+id/show_dialog_outputAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/BodyTextStyle"
+            android:text="@string/data"
+            android:layout_marginHorizontal="6dp"
+            />
+    </LinearLayout>
+</LinearLayout>

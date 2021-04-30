@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">LatihanCRUD</string>
+    <string name="email">Email</string>
+    <string name="add_record">Add Record</string>
+    <string name="name">Name</string>
+    <string name="all_records">All Records</string>
+    <string name="no_records_available">No Records Available</string>
+    <string name="colon">:</string>
+    <string name="edit_record">Edit Record</string>
+    <string name="remove_record">Remove Record</string>
+    <string name="cancels">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="address">Address</string>
+    <string name="data">data</string>
+    <string name="refresh">Refresh</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

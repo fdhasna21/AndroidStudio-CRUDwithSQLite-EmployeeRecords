@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:id="@+id/recordlayout_container"
+    android:gravity="center_vertical">
+
+    <TextView
+        android:id="@+id/recordlayout_name"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:layout_marginHorizontal="6dp"
+        style="?attr/textAppearanceBody2" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/recordlayout_separator"-->
+<!--        android:text="@string/colon"-->
+<!--        style="?attr/textAppearanceBody2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="6dp"-->
+<!--        android:layout_toRightOf="@id/recordlayout_name"-->
+<!--        android:layout_toEndOf="@id/recordlayout_name" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/recordlayout_email"-->
+<!--        android:text="@string/email"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginHorizontal="6dp"-->
+<!--        style="?attr/textAppearanceBody2"-->
+<!--        android:layout_toRightOf="@id/recordlayout_separator"-->
+<!--        android:layout_toLeftOf="@id/recordlayout_edit"-->
+<!--        android:layout_toEndOf="@id/recordlayout_separator"-->
+<!--        android:layout_toStartOf="@id/recordlayout_edit" />-->
+
+    <ImageView
+        android:id="@+id/recordlayout_more"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_more"
+        android:contentDescription="@string/edit_record"
+        android:layout_marginHorizontal="6dp"
+        android:layout_toLeftOf="@+id/recordlayout_edit"
+        android:layout_toStartOf="@+id/recordlayout_edit"
+        android:foregroundGravity="center"/>
+
+    <ImageView
+        android:id="@+id/recordlayout_edit"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_edit"
+        android:contentDescription="@string/edit_record"
+        android:layout_marginHorizontal="6dp"
+        android:layout_toLeftOf="@+id/recordlayout_remove"
+        android:layout_toStartOf="@+id/recordlayout_remove"
+        android:foregroundGravity="center"/>
+
+    <ImageView
+        android:id="@+id/recordlayout_remove"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/ic_remove"
+        android:contentDescription="@string/remove_record"
+        android:layout_marginHorizontal="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:foregroundGravity="center"/>
+
+</RelativeLayout>
